@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!-- Title -->
+    <title>Mind Reader</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="content">
+                <h2>Mind Reader</h2>
+                <p>Pick a number between 0 - 10</p>
+                <input type="number" id="num" min="0" max="10"><br>
+                <button type="submit" id="submit" onclick="readMinds()">Submit</button>
+                <div id="output"></div>
+                <script>
+                    function readMinds(){
+                        input = document.getElementById("num");
+                        num = input.value;
+                        document.getElementById("output").innerHTML = num;
+                    }        
+                </script>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

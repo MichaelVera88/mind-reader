@@ -1,0 +1,44 @@
+/* CSS Reset */
+body main div{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Body Style Rules*/
+body {
+    background-color: #262626;
+}
+
+/* Main Style Rules */
+main {
+    margin-top: 10%;
+}
+
+/* Div Style Rules */
+.container {
+    background-color: #363636;
+    position: relative;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+}
+
+.content {
+    text-align: center;
+    color: white;
+}
+
+/* Content Style Rules */
+h2 {
+    padding: 10%;
+}
+
+p {
+    padding: 5%;
+}
+
+#number {
+    margin: 10%;
+    width: 30px;
+}
