@@ -18,12 +18,12 @@
                 <p>Pick a number between 0 - 10</p>
                 <input type="number" id="num" min="0" max="10"><br>
                 <button type="submit" id="submit" onclick="readMinds()">Submit</button>
+                <div style="padding: 5%";>Prediction: </div>
                 <div id="output"></div>
                 <script>
-                    function readMinds(){
-                        input = document.getElementById("num");
-                        num = input.value;
-                        document.getElementById("output").innerHTML = num;
+                    function readMinds()
+                    {
+                        document.getElementById("output").innerHTML = Math.floor(Math.random() * 11);
                     }        
                 </script>
             </div>
