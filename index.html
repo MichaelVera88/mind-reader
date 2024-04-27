@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="CSS/styles.css">
+	<!-- Link CSS -->
+	<link rel="stylesheet" href="CSS/styles.css">
 
-    <!-- Title -->
-    <title>Mind Reader</title>
+	<!-- Title -->
+	<title>Mind Reader</title>
 </head>
 <body>
-    <main>
-        <div class="container">
-            <div class="content">
-                <h2>Mind Reader</h2>
-                <p>Pick a number between 0 - 10</p>
-                <input type="number" id="num" min="0" max="10"><br>
-                <button type="submit" id="submit" onclick="readMinds()">Submit</button>
-                <div style="padding: 5%";>Prediction: </div>
-                <div id="output"></div>
-                <script>
-                    function readMinds()
-                    {
-                        document.getElementById("output").innerHTML = Math.floor(Math.random() * 11);
-                    }        
-                </script>
-            </div>
-        </div>
-    </main>
+	<main>
+		<div class="container">
+			<div class="content">
+				<h2>Mind Reader</h2>
+				<p>Pick a number between 0 - 10</p>
+				<input type="number" id="num" min="0" max="10"><br>
+				<button type="submit" id="submit" onclick="readMinds()">Submit</button>
+				<div style="padding: 5%";>Prediction: </div>
+				<div id="output"></div>
+				<script>
+					function readMinds()
+					{
+						document.getElementById("output").innerHTML = Math.floor(Math.random() * 11);
+					}
+				</script>
+			</div>
+		</div>
+	</main>
 </body>
 </html>
